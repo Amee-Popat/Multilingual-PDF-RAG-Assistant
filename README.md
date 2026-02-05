@@ -135,6 +135,30 @@ Refer to the commands in the repository for local execution.
 
 ---
 
+## 📁 Project Structure
+
+Multilingual-PDF-RAG-Assistant/
+│
+├── backend/
+│   ├── pdf_processor.py        
+│   ├── chunking.py             
+│   ├── embeddings.py           
+│   ├── vector_store.py         
+│   ├── rag_pipeline.py        
+│   ├── tts.py                
+│   └── numeric_utils.py       
+│
+├── chroma_db/                  
+│
+├── uploads/                    
+│
+├── app.py                      
+├── main.py                   
+├── requirements.txt           
+├── README.md                   
+└── .gitignore
+
+
 ## 🧪 Example Use Cases
 
 - Extract account details from bank statements
