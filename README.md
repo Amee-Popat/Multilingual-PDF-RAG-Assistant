@@ -1,4 +1,4 @@
-# 📄 Multilingual PDF RAG Assistant (FastAPI + Streamlit + ChromaDB)
+# 📄 Multilingual PDF RAG Assistant (FastAPI + Multilingual + OCR)
 
 A **Retrieval-Augmented Generation (RAG)** based intelligent document assistant that allows users to upload PDF documents and ask context-aware questions in **English and Hindi**, with **optional audio responses**.
 
