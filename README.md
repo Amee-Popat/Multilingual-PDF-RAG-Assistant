@@ -127,6 +127,8 @@ Refer to the commands in the repository for local execution.
 
 ---
 
+🔊 Audio responses are generated dynamically at runtime and are not stored in the repository.
+
 ### Question Answering (Hindi)
 
 ![Hindi QA](assets/chat_hi_audio.png)
