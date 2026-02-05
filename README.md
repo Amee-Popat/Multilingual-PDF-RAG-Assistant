@@ -120,7 +120,6 @@ Refer to the commands in the repository for local execution.
 ### Upload Interface
 
 ![Upload](assets/upload.png)
-
 ### Question Answering (English)
 
 ![English QA](assets/chat_en_audio.png)
