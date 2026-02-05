@@ -1,0 +1,22 @@
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Vector DB
+chroma_db/
+
+# Uploaded files
+uploads/
+
+# Audio files
+*.mp3
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env

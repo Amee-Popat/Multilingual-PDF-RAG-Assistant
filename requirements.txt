@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+streamlit
+chromadb
+sentence-transformers
+pdfplumber
+pdf2image
+pytesseract
+pillow
+torch
+gtts
+python-multipart
+requests
+
