@@ -1,4 +1,4 @@
-# 📄 📄 Multilingual PDF RAG Assistant
+# 📄 Multilingual PDF RAG Assistant
 
 ## 🚀 Project Overview
 
@@ -118,6 +118,7 @@ Refer to the commands in the repository for local execution.
 ## 📸 Screenshots
 
 ### Upload Interface
+
 ![Upload](assets\upload.png)
 
 ### Question Answering (English)
