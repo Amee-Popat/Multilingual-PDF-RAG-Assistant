@@ -1,45 +1,84 @@
-# 📄 Multilingual PDF RAG Assistant
+# 📄 Multilingual PDF RAG Assistant (FastAPI + Streamlit + ChromaDB)
 
-## 🚀 Project Overview
-
-This project is a Retrieval-Augmented Generation (RAG) system that enables users to upload PDF documents and ask questions about them in English or Hindi.
-
-The assistant supports:
-
-- 📊 Structured Data (Bank Statements)
-- 🧾 Semi-Structured Data (Invoices)
-- 📜 Unstructured Data (Rent Agreements)
-
-It extracts information, retrieves relevant context using vector embeddings, and generates accurate responses using a local LLM (Mistral via Ollama).
+A **Retrieval-Augmented Generation (RAG)** based intelligent document assistant that allows users to upload PDF documents and ask context-aware questions in **English and Hindi**, with **optional audio responses**.
 
 ---
 
-## ⭐ Key Highlights
+## 🌐 Project Overview
 
-- Strict hallucination-free document question answering
-- Works completely offline using local LLM (Ollama + Mistral)
-- Handles structured, semi-structured, and unstructured PDFs
-- Finance-safe and legal-safe answer generation
-- Beginner-friendly yet production-ready RAG architecture
+This project is designed to work with different types of documents, including:
 
----
+- 📊 Structured documents (Bank Statements)
+- 🧾 Semi-structured documents (Invoices)
+- 📜 Unstructured documents (Agreements, Letters)
 
-## 🎯 Problem Statement
-
-Organizations deal with multiple document formats such as invoices, legal agreements, and financial statements. Extracting information manually is time-consuming and error-prone.
-
-This project builds a smart assistant that:
-
-- Understands structured and unstructured PDFs
-- Performs contextual question answering
-- Supports multilingual interaction
-- Provides optional voice output
-- Answers are generated strictly from document content
-- If information is missing, the assistant clearly responds with “Not mentioned in the document”
-- Prevents logical guessing and numerical hallucinations in financial documents
+The system extracts text from PDFs, retrieves relevant context using vector embeddings, and generates **accurate, grounded answers** using a **local LLM (Mistral via Ollama)**.
 
 ---
 
+## ⭐ Features
+
+### 🔹 1. PDF Upload & Processing
+- Upload PDF documents via Streamlit UI
+- Native text extraction
+- Table extraction
+- OCR fallback for scanned PDFs
+
+---
+
+### 🔹 2. Intelligent Chunking & Embeddings
+- Structure-aware chunking
+- Vector embeddings using Sentence Transformers
+- Persistent storage using ChromaDB
+
+---
+
+### 🔹 3. Context-Aware Question Answering (RAG)
+Ask natural language questions such as:
+- “What is the account holder name?”
+- “What is the total balance?”
+- “Is nominee information mentioned?”
+
+Answers are:
+- Strictly based on document content
+- Hallucination-controlled
+- Short and precise
+
+---
+
+### 🔹 4. Multilingual Support
+- English question & answers
+- Hindi question & answers
+- Language-specific strict prompting
+
+---
+
+### 🔹 5. Optional Audio Responses
+- Text-to-Speech output
+- MP3 audio generated dynamically
+
+---
+
+## 🛠 Tech Stack
+
+### Backend
+- FastAPI
+- ChromaDB
+- Sentence Transformers
+- pdfplumber
+- pytesseract (OCR)
+- Ollama (Mistral LLM)
+
+### Frontend
+- Streamlit
+
+### AI Models
+- all-MiniLM-L6-v2 (Embeddings)
+- Mistral (LLM via Ollama)
+- gTTS (Text-to-Speech)
+- Helsinki-NLP Translation Models
+  
+---
 ## 🧠 System Architecture
 
 The system follows a Retrieval-Augmented Generation (RAG) pipeline where
@@ -66,42 +105,6 @@ Response Generation + Optional TTS
 
 ---
 
-## ✨ Features
-
-- 📂 PDF Upload
-- 🔍 Native Text Extraction + OCR fallback
-- 🧩 Intelligent Chunking
-- 🔎 Semantic Search using ChromaDB
-- 🤖 Local LLM (Mistral)
-- 🌍 English & Hindi Support
-- 🔊 Text-to-Speech Output
-- 🧠 Context-Grounded Prompting (Hallucination Reduction)
-- 💬 Interactive Streamlit UI
-- Reduces human error in financial and legal document analysis
-- Improves accessibility with multilingual and audio responses
-
----
-
-## 🛠 Tech Stack
-
-Backend:
-- FastAPI
-- ChromaDB
-- Sentence Transformers
-- pdfplumber
-- pytesseract
-- Ollama (Mistral)
-
-Frontend:
-- Streamlit
-
-AI Models:
-- all-MiniLM-L6-v2 (Embeddings)
-- Mistral (LLM via Ollama)
-- Helsinki-NLP Translation Models
-- gTTS (Text-to-Speech)
-
----
 
 ## ▶️ How to Run the Project
 
@@ -143,7 +146,19 @@ Refer to the commands in the repository for local execution.
 - Understand clauses in rent agreements
 - Ask document questions in Hindi or English
 
+---
 
+| Feature                  | Implemented |
+| ------------------------ | ----------- |
+| PDF Upload               | ✅           |
+| OCR Support              | ✅           |
+| Intelligent Chunking     | ✅           |
+| Semantic Search (RAG)    | ✅           |
+| Multilingual Support     | ✅           |
+| Strict Context Answering | ✅           |
+| Audio Response           | ✅           |
+| Persistent Vector DB     | ✅           |
+| Local LLM Integration    | ✅           |
 
 
 
