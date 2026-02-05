@@ -119,7 +119,7 @@ Refer to the commands in the repository for local execution.
 
 ### Upload Interface
 
-![Upload](assets\upload.png)
+![Upload](assets/upload.png)
 
 ### Question Answering (English)
 
